@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">lab3</string>
+    <string name="title_activity_mir_castle">MirCastle</string>
+    <string name="tab_text_1">Description</string>
+    <string name="tab_text_2">Video</string>
+    <string name="tab_text_3">Location</string>
+</resources>

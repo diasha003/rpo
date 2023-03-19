@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Lab3"
+        tools:targetApi="31">
+
+
+
+        <activity
+            android:name=".showplaces.MirCastle"
+            android:exported="false"
+            android:label="@string/title_activity_mir_castle"
+            android:theme="@style/Theme.Lab3.NoActionBar"
+            tools:ignore="AppLinkUrlError">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".showplaces.BelovezhskayaPushcha"
+            android:exported="false"
+            android:label="BelovezhskayaPushcha"
+            android:theme="@style/Theme.Lab3.NoActionBar"
+            tools:ignore="AppLinkUrlError">
+        </activity>
+        <activity
+            android:name=".showplaces.NesvizhCastle"
+            android:exported="false"
+            android:label="NesvizhCastle"
+            android:theme="@style/Theme.Lab3.NoActionBar"
+            tools:ignore="AppLinkUrlError">
+        </activity>
+        <activity
+            android:name=".showplaces.BrestFortress"
+            android:exported="false"
+            android:label="BrestFortress"
+            android:theme="@style/Theme.Lab3.NoActionBar"
+            tools:ignore="AppLinkUrlError">
+        </activity>
+        <activity
+            android:name=".showplaces.MuzeiIstoriiVov"
+            android:exported="false"
+            android:label="MuzeiIstoriiVov"
+            android:theme="@style/Theme.Lab3.NoActionBar"
+            tools:ignore="AppLinkUrlError">
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
