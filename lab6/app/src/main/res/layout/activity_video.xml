@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".VideoActivity">
+
+    <VideoView
+        android:id="@+id/videoPlayer"
+        android:layout_width="match_parent"
+        android:layout_height="400dp">
+    </VideoView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50px">
+
+        <EditText
+            android:id="@+id/et_MediaPath"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:width="250dp"
+            android:text="/sdcard/DCIM/CameraExample/153976.mp4"
+            android:layout_marginRight="15px"
+            >
+        </EditText>
+
+        <Button
+            android:id="@+id/b_Start"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:onClick="onClickStart"
+            android:text="try to play"
+            android:layout_marginRight="15px">
+        </Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50px">
+
+        <Button
+            android:id="@+id/b_Pause"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:onClick="onClick"
+            android:text="pause"
+            android:layout_marginRight="15px">
+        </Button>
+
+        <Button
+            android:id="@+id/b_Resume"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:onClick="onClick"
+            android:text="resume"
+            android:layout_marginRight="15px">
+        </Button>
+
+        <Button
+            android:id="@+id/b_Stop"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:onClick="onClick"
+            android:text="stop"
+            android:layout_marginRight="15px">
+        </Button>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Разработала Фурсевич Д.С."></TextView>
+</LinearLayout>
